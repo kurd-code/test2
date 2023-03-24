@@ -1,0 +1,111 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/vazir-Black.eot);
+    src: url(/font/vazir.ttf) format('truetype'),
+         url(/font/vazir.woff2) format('woff2'),
+         url(/font/vazir.woff) format('woff');   
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+
+}
+header{
+    width: 90vw;
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #485461, #28313b 74%);
+}
+.imag{
+    background: url('../img/bg.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+    color:white;
+    transition: 1s;
+}
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 51, 59, .8);
+}
+.imag.active{
+    transform: perspective(1300px)  rotateY(20deg) translateZ(310px) scale(.5) ;
+    position: absolute;
+    left: -250px;
+}
+.imag p{
+    width: 600px;
+}
+.menu-left{
+    position:absolute;
+    top: 190px;
+    right: 70px;
+    /* display: none; */
+    transition:all 1s;
+    opacity: 0;
+    color: white;
+}
+.menu-left.activ{
+    /* display: block; */
+    top: 130px;
+    opacity: 1;
+}
+.menu-left ul{
+    list-style-type: none;
+}
+.menu-left ul li{
+    margin: 30px;
+    font-size: 20px;
+}
+button{
+    border: none;
+    background-color: rgb(43, 62, 171);
+    color: white;
+    font-family: 'vazir';
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.text{
+    width: 100%;
+}
+p{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
